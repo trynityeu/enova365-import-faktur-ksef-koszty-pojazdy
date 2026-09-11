@@ -1,6 +1,6 @@
 # Import faktur kosztowych i samochodowych z KSeF bez wyboru matrycy (enova365)
 
-> Element większej całości: **[Obieg faktur zakupu z KSeF w enova365 — mapa rozwiązania](../../trynityeu/enova365-obieg-faktur-ksef)**
+> Element większej całości: **[Obieg faktur zakupu z KSeF w enova365 — mapa rozwiązania](https://github.com/trynityeu/enova365-obieg-faktur-ksef)**
 
 Dodatek do systemu ERP **enova365** (Soneta sp. z o.o.), automatyzujący import
 faktur zakupu odebranych przez **Krajowy System e-Faktur (KSeF)** do dwóch
@@ -13,10 +13,10 @@ To repozytorium zawiera wyłącznie **opis funkcjonalny** — bez kodu
 
 Pokrewne dodatki tej samej rodziny:
 
-- [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)
+- [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)
   — inny proces: tam koszt wynika z zamówienia zakupu, tutaj z karty
   kontrahenta;
-- [Administracja mapowaniem pól faktury KSeF per dostawca](../../trynityeu/enova365-mapowanie-pol-faktury-ksef)
+- [Administracja mapowaniem pól faktury KSeF per dostawca](https://github.com/trynityeu/enova365-mapowanie-pol-faktury-ksef)
   — schematy mapowania XML; ten dodatek z nich **nie korzysta**.
 
 ## Problem, który rozwiązuje
@@ -119,7 +119,7 @@ Rodzaju dokumentu **nie ustala żaden z dodatków** — przypisuje go sama
 enova365 w momencie pobrania pliku z KSeF, na podstawie **cechy
 algorytmicznej** skonfigurowanej w bazie: NIP z faktury → kontrahent →
 jego typ → rodzaj dokumentu. Dostawca materiałów daje zakup materiałowy
-(obsługiwany przez [osobny dodatek](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)),
+(obsługiwany przez [osobny dodatek](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)),
 oznaczenie „pojazdy" — zakup samochodowy, a pozostałe typy **oraz brak
 kontrahenta w bazie** — zakup kosztowy; dwa ostatnie obsługuje ten
 dodatek.
@@ -129,7 +129,7 @@ należy do niego — pliki cudzego rodzaju pomija zamiast je przetwarzać,
 więc pomyłka w klasyfikacji kończy się komunikatem, nie błędnie
 zaksięgowanym dokumentem.
 
-→ [Automatyczna klasyfikacja faktur KSeF przed importem](../../trynityeu/enova365-klasyfikacja-faktur-ksef)
+→ [Automatyczna klasyfikacja faktur KSeF przed importem](https://github.com/trynityeu/enova365-klasyfikacja-faktur-ksef)
 — pełny opis reguły, cech pomocniczych do przeglądu przed importem oraz
 tego, kiedy poprawia się pojedynczy plik, a kiedy kartę kontrahenta.
 
@@ -154,7 +154,7 @@ tego, kiedy poprawia się pojedynczy plik, a kiedy kartę kontrahenta.
   analitycznym.
 - Faktury zakupu **materiałowego** idą zupełnie inną ścieżką: dopasowanie
   do zamówień zakupu i rozliczenie ilościowe.
-  → [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)
+  → [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)
 
 ## Jakie cechy (pola konfiguracyjne enova365) są wykorzystywane
 
